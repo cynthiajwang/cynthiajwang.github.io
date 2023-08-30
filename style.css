@@ -58,21 +58,24 @@
 /* BASIC-SETUP */
 @font-face {
   font-family: 'E-Ukraine';
-  src: url('fonts/e-ukraine-light_w.woff') format('woff');
+  src: url('fonts/e-ukraine-light_w.woff');
+  src: url('fonts/e-ukraine-light_w.woff') format('woff') url('fonts/e-ukraine-light_w.woff2') url('fonts/e-ukraine-light_w.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'E-Ukraine';
-  src: url('fonts/e-ukraine-regular_w.woff') format('woff');
+  src: url('fonts/e-ukraine-regular_w.woff');
+  src: url('fonts/e-ukraine-regular_w.woff') format('woff') url('fonts/e-ukraine-regular_w.woff2') url('fonts/e-ukraine-regular_w.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'E-Ukraine';
-  src: url('fonts/e-ukraine-medium_w.woff') format('woff');
+  src: url('fonts/e-ukraine-medium_w.woff');
+  src: url('fonts/e-ukraine-medium_w.woff') format('woff') url('fonts/e-medium-light_w.woff2') url('fonts/e-ukraine-medium_w.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
