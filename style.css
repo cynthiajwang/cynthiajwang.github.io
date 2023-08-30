@@ -79,18 +79,15 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "E-Ukraine";
   box-sizing: border-box;
 }
 
 body {
   background: var(--background-color);
-  /* color: var(--primary-text-color); */
 }
 
 html {
   scroll-behavior: smooth;
-  /* font-size: 1.125em; */
   background: var(--bg-default);
 }
 
@@ -100,6 +97,7 @@ h1, h2, h3, p {
 }
 
 h1 {
+  font-family: E-Ukraine;
   font-size: clamp(2.00rem, calc(1.56rem + 2.19vw), 3.75rem);
   font-weight: 300;
   line-height: 128%;
