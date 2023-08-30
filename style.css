@@ -17,25 +17,30 @@
   --content-hover: #F92F60;
   --pf-orange: #ff9966;
   --xr-purple: #8C6DFC;
+  --xr-light-purple: #D9CFFC;
   --cs15-green:#8B995A;
   --cs15-eggshell: #F0EAD6;
 
   --padding-8: clamp(0.13rem, calc(0.03rem + 0.47vw), 0.50rem);
   --padding-12: clamp(0.25rem, calc(0.13rem + 0.63vw), 0.75rem);
-  --padding-16: clamp(0.38rem, calc(0.22rem + 0.78vw), 1.00rem);
-  --padding-24: clamp(0.50rem, calc(0.25rem + 1.25vw), 1.50rem);
-  --padding-32: clamp(0.75rem, calc(0.44rem + 1.56vw), 2.00rem);
+  --padding-16-small: clamp(0.625rem, calc(0.53rem + 0.47vw), 1.00rem);
+  --padding-24: clamp(0.75rem, calc(0.56rem + 0.94vw), 1.50rem);
+  --padding-32: clamp(0.88rem, calc(0.59rem + 1.41vw), 2.00rem);
   --padding-48: clamp(1.00rem, calc(0.50rem + 2.50vw), 3.00rem);
   --padding-64: clamp(1.50rem, calc(0.88rem + 3.13vw), 4.00rem);
   --padding-96: clamp(2.00rem, calc(1.00rem + 5.00vw), 6.00rem);
 
+  --padding-16: clamp(0.75rem, calc(0.69rem + 0.31vw), 1.00rem);
+
   --padding-180: clamp(1.00rem, calc(-1.98rem + 13.23vw), 11.25rem);
   --padding-80: clamp(2.25rem, calc(1.45rem + 3.55vw), 5.00rem);
 
-  --padding-140: clamp(1.00rem, calc(-1.25rem + 10.00vw), 8.75rem);
+  --padding-140: clamp(3.00rem, calc(1.56rem + 7.19vw), 8.75rem);
+  --padding-140-inner: clamp(1.00rem, calc(-0.94rem + 9.69vw), 8.75rem);
   --padding-120: clamp(1.00rem, calc(-0.62rem + 8.13vw), 7.50rem);
 
-  --padding-180-top: clamp(6.25rem, calc(5.00rem + 6.25vw), 11.25rem);
+  --padding-180-top: clamp(8.00rem, calc(7.19rem + 4.06vw), 11.25rem);
+  --padding-180-bottom: clamp(4.00rem, calc(2.19rem + 9.06vw), 11.25rem);
 }
 
 /* COLORS */
@@ -250,14 +255,14 @@ p.padding-64 {
 
 .home-center-padding {
   /* padding: 8.75rem 11.25rem; */
-  padding: 8.75rem var(--padding-180);
+  padding: var(--padding-80) var(--padding-180) var(--padding-180-bottom);
   max-width: 1440px;
   margin-inline: auto;
 }
 
 .home-bottom-padding {
   /* padding: 8.5rem 11.25rem 11.25rem; */
-  padding: 8.5rem var(--padding-180) 11.25rem;
+  padding: var(--padding-80) var(--padding-180) var(--padding-180-bottom);
   margin-inline: auto;
   max-width: 1440px;
 }
@@ -278,7 +283,7 @@ p.padding-64 {
 
 .work-inner-container {
   /* padding: 0 8.75rem; */
-  padding: 0 var(--padding-140);
+  padding: 0 var(--padding-140-inner);
   margin-inline: auto;
   max-width: 1440px;
 }
@@ -291,21 +296,21 @@ p.padding-64 {
 
 .work-bottom-padding {
   /* padding: 5rem 11.25rem 8.5rem; */
-  padding: var(--padding-180);
+  padding: var(--padding-80) var(--padding-180);
   margin-inline: auto;
   max-width: 1440px;
 }
 
 .rest-bottom-container {
   /* padding: 5rem 11.25rem 10.25rem; */
-  padding: var(--padding-180);
+  padding: var(--padding-80) var(--padding-180) var(--padding-180-bottom);
   margin-inline: auto;
   max-width: 1440px;
 }
 
 .play-middle-container {
   /* padding: 5rem 11.25rem; */
-  padding: var(--padding-180);
+  padding: var(--padding-80) var(--padding-180);
   margin-inline: auto;
   max-width: 1440px;
 }
@@ -386,7 +391,7 @@ nav ul li a p:hover {
 .card {
   width: 100%;
   background: #fff;
-  padding: 1rem;
+  padding: var(--padding-16-small);
   cursor: pointer;
   transition: 0.3s;
   border-radius: 1rem;
@@ -421,30 +426,30 @@ nav ul li a p:hover {
 .cover-split-container {
   display: inline-flex;
   align-items: center;
-  gap: var(--padding-16);
-  background: #D3C6FF;
+  gap: var(--padding-16-small);
+  background: var(--xr-light-purple);
   padding: var(--padding-48);
   margin-bottom: var(--padding-16);
   border-radius: 0.625rem;
 }
 
 .cover-mobile {
-  border-radius: 0.625rem;
+  border-radius: var(--padding-12);
 }
 
 .cover-desktop {
-  border-radius: 0.75rem;
+  border-radius: var(--padding-16-small);
 }
 
 .card-img.omelette-game {
-  padding: var(--padding-64);
+  padding: var(--padding-48) var(--padding-64);
   background: var(--cs15-eggshell);
   margin-bottom: var(--padding-16);
 }
 
 /* ************************ WORK--XR-HUB ************************ */
 .cover-container.xr-hub {
-  background: #D3C6FF;
+  background: var(--xr-light-purple);
 }
 
 button {
@@ -497,10 +502,10 @@ button {
 }
 
 .num-circle {
-  height: 36px; 
-  width: 36px;
+  height: 28px; 
+  width: 28px;
   aspect-ratio: 1/1;
-  line-height: 36px;
+  line-height: 28px;
   text-align: center;
   border-radius: 50%;
   background: var(--bg-deep);
@@ -509,7 +514,7 @@ button {
 .prototype-container {
   background: var(--bg-deep);
   border-radius: 1rem;
-  padding: 2rem var(--padding-140);
+  padding: 2rem var(--padding-140-inner);
   margin-bottom: var(--padding-48);
 }
 
@@ -521,7 +526,7 @@ button {
 }
 
 .tabs-label {
-  padding: 0.25rem 1.125rem;
+  padding: clamp(0.00rem, calc(-0.07rem + 0.32vw), 0.25rem) clamp(0.50rem, calc(0.32rem + 0.81vw), 1.125rem);
   line-height: 175%;
   transition: 0.3s ease-in-out;
 }
@@ -572,18 +577,6 @@ button {
 }
 
 @media only screen and (max-width: 1080px) {
-  .home-center-padding {
-    padding: var(--padding-140) var(--padding-180);
-    max-width: 1440px;
-    margin-inline: auto;
-  }
-  
-  .home-bottom-padding {
-    padding: var(--padding-140) var(--padding-180) var(--padding-180);
-    margin-inline: auto;
-    max-width: 1440px;
-  }
-
   .prototype-split-row {
     display: flex;
     flex-direction: row;
@@ -624,12 +617,22 @@ button {
 }
 
 .icon {
+  max-width: 100%;
+  max-height: 100%;
   flex-shrink: 0;
   /* width: 1.5rem;
   height: 1.5rem; */
 }
 
 /* ************************ WORK--LET'S-GET-CRACKING ************************ */
+.cover-container.omelette-game {
+  background: var(--cs15-eggshell);
+}
+
+.work-primary-padding.omelette-game img {
+  border-radius: var(--padding-24);
+} 
+
 .omelette-game-grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -772,6 +775,9 @@ button {
 }
 
 /* ************************ ABOUT ************************ */
+.about-container {
+  padding: var(--padding-180-top) var(--padding-180) var(--padding-180-bottom);
+}
 .about-header {
   padding-bottom: 1.5rem;
 }
