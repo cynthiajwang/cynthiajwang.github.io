@@ -30,7 +30,6 @@
   --padding-96: clamp(2.00rem, calc(1.00rem + 5.00vw), 6.00rem);
 
   --padding-180: clamp(1.00rem, calc(-1.98rem + 13.23vw), 11.25rem);
-  /* LOLOL THIS IS ACTUALLY 36 ----NOT ANYMORE*/
   --padding-80: clamp(2.25rem, calc(1.45rem + 3.55vw), 5.00rem);
 
   --padding-140: clamp(1.00rem, calc(-1.25rem + 10.00vw), 8.75rem);
@@ -57,23 +56,25 @@
 } */
 
 /* BASIC-SETUP */
-
 @font-face {
   font-family: 'E-Ukraine';
-  src: url(fonts/e-Ukraine-Light.otf) format("otf");
+  src: url(fonts/e-ukraine-light_w.woff) format('woff');
   font-weight: 300;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'E-Ukraine';
-  src: url(fonts/e-Ukraine-Regular.otf) format("otf");
+  src: url(fonts/e-ukraine-regular_w.woff) format('woff');
   font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: 'E-Ukraine';
-  src: url(fonts/e-Ukraine-Medium.otf) format("otf");
+  src: url(fonts/e-ukraine-medium_w.woff) format('woff');
   font-weight: 500;
+  font-style: normal;
 }
 
 * {
@@ -84,6 +85,7 @@
 
 body {
   background: var(--background-color);
+  font-family: sans-serif;
 }
 
 html {
@@ -93,11 +95,11 @@ html {
 
 /* FONT-STYLES */
 h1, h2, h3, p {
+  font-family: E-Ukraine;
   color: var(--text-default);
 }
 
 h1 {
-  font-family: E-Ukraine;
   font-size: clamp(2.00rem, calc(1.56rem + 2.19vw), 3.75rem);
   font-weight: 300;
   line-height: 128%;
@@ -233,7 +235,6 @@ p.padding-64 {
 .home-center-padding {
   /* padding: 8.75rem 11.25rem; */
   padding: 8.75rem var(--padding-180);
-
   max-width: 1440px;
   margin-inline: auto;
 }
@@ -241,8 +242,6 @@ p.padding-64 {
 .home-bottom-padding {
   /* padding: 8.5rem 11.25rem 11.25rem; */
   padding: 8.5rem var(--padding-180) 11.25rem;
-  /* padding: var(--padding-180); */
-
   margin-inline: auto;
   max-width: 1440px;
 }
@@ -300,7 +299,6 @@ p.padding-64 {
   padding: clamp(0.50rem, calc(0.32rem + 0.81vw), 1.13rem) var(--padding-120);
   justify-content: space-between;
   align-items: center;
-  /* align-self: stretch; */
   margin-inline: auto;
   max-width: 1440px;
 }
@@ -313,8 +311,6 @@ img {
 
 .nav-container {
   padding: 0.75rem clamp(0.50rem, calc(-1.17rem + 7.42vw), 6.25rem);
-  /* align-items: flex-start; */
-  /* gap: 1.5rem; */
   position: fixed;
   top: 0%;
   right: 0%;
@@ -363,7 +359,7 @@ nav ul li a p:hover {
   border-radius: 1rem;
 }
 
-/* ALL-WORK */
+/* ************************ ALL WORK ************************ */
 
 .card-gallery {
   display: grid; 
@@ -430,10 +426,6 @@ nav ul li a p:hover {
   margin-bottom: var(--padding-16);
 }
 
-/* .cover-container.omelette-game {
-  margin-bottom: var(--padding-16);
-} */
-
 /* ************************ WORK--XR-HUB ************************ */
 .cover-container.xr-hub {
   background: #D3C6FF;
@@ -468,8 +460,6 @@ button {
 .grid-container {
   display: flex;
   flex-direction: column;
-  /* display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(250px, 1fr)); */
   gap: var(--padding-24);
 }
 
@@ -652,8 +642,6 @@ button {
 }
 
 /* ************************ WORK--THE-TASTE-OF-HOME ************************ */
-
-
 .work-pill-row {
   display: flex;
   flex-wrap: wrap;
@@ -693,7 +681,6 @@ button {
 .work-right-right-side {
   margin-left: auto;
 }
-
 
 .paragraph-spacing ul {
   padding: 1rem var(--padding-80);
@@ -745,7 +732,6 @@ button {
 }
 
 /* ************************ REST ************************ */
-
 .art-container{
   columns: 2;
   gap: var(--padding-24);
@@ -756,7 +742,6 @@ button {
 }
 
 /* ************************ PLAY ************************ */
-
 .flex-col {
   display: flex;
   flex-direction: column;
@@ -771,7 +756,6 @@ button {
 }
 
 /* ************************ ABOUT ************************ */
-
 .about-header {
   padding-bottom: 1.5rem;
 }
@@ -781,19 +765,11 @@ button {
   gap: var(--padding-96);
 }
 
-
-/* HUHHH */
-
-.about-left-side {
-  /* width: 300%; */
-}
-
 .headshot {
   border-radius: 1rem;
 }
 
 /* ************************ FOOTER ************************ */
-
 footer {
   display: inline-flex;
   gap: var(--padding-24);
