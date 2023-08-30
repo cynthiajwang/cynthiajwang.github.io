@@ -85,7 +85,7 @@
 
 body {
   background: var(--background-color);
-  font-family: sans-serif;
+  font-family: E-Ukraine;
 }
 
 html {
@@ -100,18 +100,24 @@ h1, h2, h3, p {
 }
 
 h1 {
+  font-family: E-Ukraine;
+  font-style: normal;
   font-size: clamp(2.00rem, calc(1.56rem + 2.19vw), 3.75rem);
   font-weight: 300;
   line-height: 128%;
 }
 
 h2 {
+  font-family: E-Ukraine;
+  font-style: normal;
   font-size: clamp(1.50rem, calc(1.13rem + 1.88vw), 3.00rem);
   font-weight: 400;
   line-height: 132%;
 }
 
 h3 {
+  font-family: E-Ukraine;
+  font-style: normal;
   font-size: clamp(1.125rem, calc(0.91rem + 1.09vw), 2.00rem);
   font-weight: 500;
   line-height: 148%;
@@ -119,22 +125,29 @@ h3 {
 }
 
 p.large-text {
+  font-family: E-Ukraine;
+  font-style: normal;
   font-size: clamp(1.00rem, calc(0.94rem + 0.31vw), 1.25rem);
   /* font-weight: 300; */
   line-height: 160%;
 }
 
 p {
+  font-family: E-Ukraine;
+  font-style: normal;
   font-size: clamp(0.875rem, calc(0.81rem + 0.31vw), 1.125rem);
   font-weight: 300;
   line-height: 175%;
 }
 
 p.subtle {
+  
   color: var(--text-subtle);
 }
 
 p.small-text {
+  font-family: E-Ukraine;
+  font-style: normal;
   font-size: clamp(0.75rem, calc(0.69rem + 0.31vw), 1.00rem);
   font-weight: 300;
   line-height: 150%;
