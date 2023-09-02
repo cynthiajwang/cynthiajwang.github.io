@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Let's Get Cracking!</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
 </head>
 <body>
   <section class="header-work">
@@ -24,19 +25,16 @@
       </nav>
     </div>   
 
-    <!-- hero text -->
-    <div class="work-header-container">
-      <h2 class="padding strong"><span class="green">Let's Get Cracking! </span>An omelette-making game.</h2>
-
+    <!-- title -->
+    <div class="work-header-container fade">
+      <h2 class="padding strong"><span class="green">Let's Get Cracking! </span>Omelette-making game coded with Java and JavaFX.</h2>
       <div class="work-pill-row">
         <div class="category">
           <p>Java / JavaFX</p>
         </div>
-
         <div class="category">
           <p>game design / development</p>
         </div>
-
         <div class="category">
           <p>illustration</p>
         </div>
@@ -45,7 +43,7 @@
   </section>
 
   <!-- cover-image -->
-  <section class="cover-image">
+  <section class="cover-image fade">
     <div class="cover-container omelette-game">
       <div class="work-primary-padding omelette-game">
         <img src="images/omelette-game/project.png">
@@ -53,21 +51,19 @@
     </div>
   </section>
 
-  <!-- work-overview -->
+  <!-- overview -->
   <section>
-    <div class="work-primary-padding">
+    <div class="work-primary-padding fade">
       <div class="work-split-container">
         <div class="work-left-side">
           <p class="medium green">
             OVERVIEW
           </p>
         </div>
-
         <div class="work-right-side">
           <p class="padding-32">
-            For my introductory object-oriented programming course, I coded an omelette-making game using Java and JavaFX. This project took me approximately 50 hours to complete and ended up winning the cartoon competition, in which my project was one of six winners selected from a total of 420 students.
+            For my introductory object-oriented programming course, I coded an omelette-making game using Java and JavaFX. This project took me approximately 50 hours to complete and ended up winning the class cartoon competition, in which my project was one of six winners selected from a total of 420 students.
           </p>
-
           <div class="subrow">
             <div class="work-right-left-side">
               <p class="medium">
@@ -84,31 +80,28 @@
           </div>
         </div>
       </div>
-
+      
       <div class="work-split-container">
         <div class="work-left-side">
             <p class="green medium">INSPIRATION</p>
           </div>
           <div class="work-right-side">
             <p>
-              Right before college, I began learning how to cook and instantly fell in love with the therapeutic, immersive process. Eggs have always been a staple food in my life and I’ve always been drawn to their cute shapes and versatility. I was inspired to create this game by my new love for cooking and Cooking Mama, a popular Nintendo DS game when I was growing up.</p>
+              Right before college, I began learning how to cook and instantly fell in love with the therapeutic, immersive process. Eggs have always been a staple food in my life and I’ve always been drawn to their cute shapes and versatility. I was inspired to create this game by my new love for cooking and Cooking Mama, a Nintendo DS game that was popular when I was growing up.
+            </p>
           </div>
         </div>
-    
       </div>
-  
     </div>
   </section>
 
-  <!-- Work - Process -->
-
+  <!-- process -->
   <section>
-    <div class="work-primary-padding">
+    <div class="work-primary-padding fade">
       <div class="work-inner-container">
         <h3 class="padding">Sketches</h3>
-      </div>  
-      <!-- GRID -->
-      <div class="omelette-game-grid-container">
+      </div>
+      <div class="omelette-game-grid">
         <img src="images/omelette-game/sketch-1.svg" class="egg-sketches" style="background: white">
         <img src="images/omelette-game/sketch-2.svg" class="egg-sketches" style="background: white">
         <img src="images/omelette-game/sketch-3.svg" class="egg-sketches">
@@ -116,18 +109,25 @@
         <img src="images/omelette-game/sketch-5.svg" class="egg-sketches" style="background: white">
         <img src="images/omelette-game/sketch-6.svg" class="egg-sketches">
       </div>
+      <p class="small-text subtle center-align">I had planned to have three different egg options: omelettes, sunny-side ups, and hard-boiled.</p>
     </div>
-
-    <div class="work-primary-padding">
+  </section>
+  
+  <!-- challenges -->
+  <section>
+    <div class="work-primary-padding fade">
       <div class="work-inner-container">
         <h3 class="padding">The Challenge</h3>
         <p>
-          Having just learned the basics of JavaFX, I wasn't sure how to approach the project, especially since I had several different scenes I wanted to capture for each egg option. After speaking with several TAs on the scope and design of the project and scavenging JavaFX libraries, I narrowed the game to just omelettes and had a clearer idea on coding and the various JavaFX classes I could source from.
+          Having just learned the basics of JavaFX, I wasn't sure how to approach the project, especially since I had several different scenes I wanted to capture for a variety of egg dishes. After speaking with several TAs on the scope and design of the project and scavenging JavaFX libraries, I narrowed the game to just making omelettes and had a clearer idea on coding and the various JavaFX classes I could source from.
         </p>
       </div>
     </div>
+  </section>  
 
-    <div class="work-primary-padding">
+  <!-- wireframes -->
+  <section>
+    <div class="work-primary-padding fade">
       <div class="work-inner-container">
         <h3 class="padding">Wireframing</h3>
         <p class="padding-48">I created layouts of each scene and noted the JavaFX components I needed for my project.
@@ -137,27 +137,25 @@
     </div>
   </section>
 
+  <!-- final design -->
   <section>
-    <div class="work-primary-padding">
+    <div class="work-primary-padding fade">
       <div class="work-inner-container">
         <h3 class="padding">Final Design</h3>
+        <p class="padding-48">I ended up with 6 scenes to more accurately depict the various stages of cooking. I used a combination of JavaFX components and hand-drawn illustrations to create each scene.</p>
       </div>
-
       <div class="final-design">
-        <video width="100%" autoplay loop muted>
-          <source src="images/omelette-game/prototype-vid.mp4" type="video/mp4" style="object-fit: cover;">
+        <video class="omelette-prototype" width="100%" autoplay loop muted playsinline>
+          <source src="images/omelette-game/prototype-vid.mp4" type="video/mp4">
         </video>
-        <div class="center-align">
-          <p class="padding small-text subtle">How it would look on a gaming console</p>
-        </div>
-      
         <div class="row">
           <p>
             User can press the arrow keys on a computer accordingly to change background colors. 
           </p>
           <img src="images/omelette-game/bg-changer-gif.gif">
         </div>
-        <div class="omelette-grid">
+
+        <div class="two-col-grid">
           <div class="photo">
             <img src="images/omelette-game/radiobuttons-gif.gif">
           </div>
@@ -171,40 +169,44 @@
             <img src="images/omelette-game/cooking-2.png">
           </div>
         </div> 
+
         <div>
           <img src="images/omelette-game/finished.png">
         </div>
-        <div class="omelette-grid">
+
+        <div class="two-col-grid">
           <img src="images/omelette-game/chives-cheese.GIF">
           <img src="images/omelette-game/ham-cheese.GIF">
         </div>
+
         <div class="center-align">
-          <p class="small-text subtle">And the other options you could have chosen</p>
+          <p class="small-text subtle">Finished chives & cheese and ham & cheese omelettes.</p>
         </div>
       </div>    
     </div>
   </section>
 
+  <!-- reflection -->
   <section>
-    <div class="work-bottom-padding">
+    <div class="work-bottom-padding fade">
       <div class="work-inner-container">
         <h3 class="padding">Reflection</h3>
+        <p class="padding-24">This was the most technically challenging project I had completed at this point in time. Overall, I'm really proud of what I was able to achieve in a only a week.</p>
         <ol>
           <li>
             <p class="medium strong">
-              Be ambitious but also wary of time. 
+              Be ambitious during ideation but practical during execution. 
             </p>
             <p class="padding-16">
-              I originally planned to have three different modes for the game, for omelettes, scrambled eggs, and hard-boiled eggs. Given that I only had a week to complete this project, I ended up only going with omelettes. Since I was looking forward to this project weeks in advance of its release, I made sure to block out time for the project so I could solely focus my time and energy on it in order to carry out my dreams.
+              I originally planned to have three different modes for the game: omelettes, sunny-side up eggs, and hard-boiled eggs. Given that I was on a time crunch, I ended up only going with omelettes, which was still very difficult to execute. Since I was looking forward to this project weeks in advance of its release, I made sure to block out time for the project so I could solely focus my time and energy on it.
             </p>
           </li>
-
           <li>
             <p class="medium strong">
-              Utilizing the resources you have.
+              Utilize the resources you have.
             </p>
             <p class="padding-16">
-              I spent a lot of time in the JavaFX libraries to see if what I wanted to do was even achievable or practical given the limitations of JavaFX. Many of the classes I ended up using were ones the TAs haven't even heard about. I also spent much of my time at TA hours to ask questions and receive the help I needed.
+              I spent much of my time in JavaFX libraries to see if what I wanted to do was even achievable or practical given the limitations of JavaFX. Many of the classes I ended up using were ones the TAs hadn't even heard about. I also often asked the TAs questions to receive the guidance I needed.
             </p>
           </li>  
         </ol>
@@ -212,6 +214,7 @@
     </div>
   </section>
 
+  <!-- project arrows -->
   <section>
     <div class="work-primary-padding">
       <div class="work-arrow-container">
@@ -222,6 +225,7 @@
     </div>
   </section>
 
+  <!-- footer -->
   <section class="footer">
     <hr>
     <div class="footer-container">
@@ -232,6 +236,5 @@
       </footer>
     </div>
   </section>
-
 </body>
 </html>
