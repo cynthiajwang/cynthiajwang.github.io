@@ -111,7 +111,8 @@ h1, h2, h3, p {
 h1 {
   font-family: E-Ukraine;
   font-style: normal;
-  font-size: clamp(2.00rem, calc(1.56rem + 2.19vw), 3.75rem);
+  /* font-size: clamp(2.00rem, calc(1.56rem + 2.19vw), 3.75rem); */
+  font-size: clamp(1.75rem, calc(1.31rem + 2.19vw), 3.50rem);
   font-weight: 300;
   line-height: 128%;
 }
@@ -255,7 +256,7 @@ p.padding-64 {
 
 /* PADDING/CONTAINERS */
 .home-center-padding {
-  padding: var(--padding-140) var(--padding-180) var(--padding-180-bottom);
+  padding: var(--padding-140) var(--padding-180) var(--padding-140);
   max-width: 1440px;
   margin-inline: auto;
 }
@@ -367,6 +368,22 @@ nav ul li a p:hover {
   background: var(--content-hover);
 } 
 
+.hero-split-container {
+  display: flex; 
+  flex-direction: horizontal; 
+  gap: 2rem;
+  align-content: center;
+}
+
+.icon {
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon:hover {
+  transform: rotate(16deg);
+  cursor: pointer;
+}
+
 .home-img {
   border-radius: 1rem;
 }
@@ -428,6 +445,19 @@ nav ul li a p:hover {
 
 .card-omelette-container img {
   border-radius: 0.5rem;
+}
+
+/* ************************ WORK--PASSIONFROOT ************************ */
+.pf-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding-24);
+}
+
+.three-col-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--padding-24);
 }
 
 /* ************************ WORK--XR-HUB ************************ */
@@ -781,6 +811,16 @@ footer p {
 }
 
 @media only screen and (max-width: 720px) {
+  .hero-split-container {
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+  }
+
+  .right-side {
+    /* padding-bottom: var(--padding-48); */
+    width: auto;
+  }
+
   .work-split-container {
     flex-wrap: wrap;
   }
