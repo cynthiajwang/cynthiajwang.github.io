@@ -381,7 +381,6 @@ nav ul li a p:hover {
 
 .icon:hover {
   transform: rotate(16deg);
-  cursor: pointer;
 }
 
 .home-img {
