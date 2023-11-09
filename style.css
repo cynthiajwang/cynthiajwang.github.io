@@ -1,7 +1,6 @@
 /* ************************ STYLE-GUIDE ************************ */
 
 /* VARIABLE-DEFINING */
-
 :root {
   --bg-default: #F9F9F9;
   --bg-deep: #EAEAEA;
@@ -147,7 +146,7 @@ p {
   font-style: normal;
   font-size: clamp(0.875rem, calc(0.81rem + 0.31vw), 1.125rem);
   font-weight: 300;
-  line-height: 175%;
+  line-height: 200%;
 }
 
 p.subtle {
@@ -222,31 +221,31 @@ h3.padding-16 {
   padding-bottom: calc(1.5 * var(--padding-8));
 }
 
-p.padding-8 {
+.padding-8 {
   padding-bottom: var(--padding-8)
 }
 
-p.padding-12 {
+.padding-12 {
   padding-bottom: var(--padding-12);
 }
 
-p.padding-16 {
+.padding-16 {
   padding-bottom: var(--padding-16);
 }
 
-p.padding-32 {
+.padding-32 {
   padding-bottom: var(--padding-32);
 }
 
-p.padding-24 {
+.padding-24 {
   padding-bottom: var(--padding-24);
 }
 
-p.padding-48 {
+.padding-48 {
   padding-bottom: var(--padding-48);
 }
 
-p.padding-64 {
+.padding-64 {
   padding-bottom: var(--padding-64);
 }
 
@@ -459,6 +458,28 @@ nav ul li a p:hover {
   gap: var(--padding-24);
 }
 
+.three-col-grid.small-gap {
+  gap: var(--padding-8)
+}
+
+.same-height-flex {
+  display: flex;
+}
+
+.horizontal-scroll {
+  overflow: auto;
+  white-space: nowrap;
+  
+}
+
+.carousel-two-col {
+  width: 50%;
+}
+
+.carousel-three-col {
+  width: 33.3%;
+}
+
 /* ************************ WORK--XR-HUB ************************ */
 .cover-container.xr-hub {
   background: url(images/xr-hub/light-purple-bg.png);
@@ -472,6 +493,7 @@ button {
   padding: 0.75rem 1.5rem;
   justify-content: center;
   align-items: center;
+  display: flex;
   border: 2px solid var(--border-default);
   border-radius: 5rem;
   transition: 0.3s ease-in-out;
@@ -480,14 +502,6 @@ button {
 .jump-button:hover {
   background: var(--bg-deep);
   cursor: pointer;
-}
-
-.process-image {
-  padding-bottom: var(--padding-24);
-}
-
-.style-guide {
-  padding-bottom: var(--padding-48);
 }
 
 .grid-container {
@@ -678,6 +692,10 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: var(--padding-12);
+}
+
+.pill-text {
+  line-height: 175%;
 }
 
 .category {
